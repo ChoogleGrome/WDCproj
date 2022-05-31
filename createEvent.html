@@ -1,0 +1,59 @@
+<!-- 
+    TO-DO:
+        - Add Google Places API for location
+        - Add Quill.js for Rich Text Editing
+        - Add Error warnings using Vue.js
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DELTA EVENTS: Create Event</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    </head>
+    <body>
+        <header class="fixed">
+            <h1 class="box title">DELTA EVENTS</h1>
+        </header>
+        <main class="center fitted">
+            <h2 class="title smaller">CREATE EVENT</h2>
+            <div class="box">
+                <h2 class="subtitle">Main Details</h2>
+                <a>Name of Event</a>
+                <br>
+                <input type="text" class="textbox" id="name">
+                <br>
+                <!-- Switch to Google Places API -->
+                <a>Location</a>
+                <br>
+                <input type="text" class="textbox" id="location">
+                <br>
+                <!-- error message here -->
+            </div>
+            <div class="box">
+                <h2 class="subtitle">Date & Time</h2>
+                <a>Start Date & Time</a>
+                <br>
+                <input type="date" class="date" id="startDate">
+                <input type="time" class="time" id="startTime">
+                <br>
+                <a>End Date & Time</a>
+                <br>
+                <input type="date" class="date" id="endDate">
+                <input type="time" class="time" id="endTime">
+            </div>
+            <div class="box">
+                <h2 class="subtitle">Information</h2>
+                <!-- Replace with Quill (https://quilljs.com/) -->
+                <textarea></textarea>
+            </div>
+            <button class="main-button alone">Submit</button>
+        </main>
+    </body>
+</html>

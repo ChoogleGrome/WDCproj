@@ -1,0 +1,48 @@
+<!-- 
+    TO-DO:
+        - Add Social Media Sign in
+        - Link to express
+        - Add password encryption
+        - Add error message
+-->
+
+<!-- account settings is signup page with auto-populated input fields -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DELTA EVENTS: Account Settings</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    </head>
+    <body>
+        <header class="fixed">
+            <h1 class="box title">DELTA EVENTS</h1>
+        </header>
+        <main class="center fitted">
+            <h1 class="title smaller">CHANGE INFORMATION</h1>
+            <div class="box">
+                <a>Username:</a>
+                <br>
+                <input type="text" class="textbox" id="username">
+                <br>
+                <a>Email:</a>
+                <br>
+                <input type="text" class="textbox" id="email">
+                <br>
+                <a>New/Old Password:</a>
+                <br>
+                <input type="password" class="textbox" id="password1">
+                <br>
+                <a>Confirm Password:</a>
+                <br>
+                <input type="password" class="textbox" id="password2">
+                <!-- error message here -->
+            </div>
+            <button class="main-button alone">Submit</button>
+        </main>
+    </body>
+</html>
