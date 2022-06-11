@@ -1,3 +1,16 @@
 # WDCproj
 
-https://medium.com/@jonathanmines/the-ultimate-github-collaboration-guide-df816e98fb67#:~:text=Click%20on%20the%20%E2%80%9CSettings%E2%80%9D%20tab,be%20listed%20as%20a%20collaborator.
+Initial Run:
+npm install
+
+Start:
+npm start
+
+Uploaded ZIP contains premade https certificates, if not included, run these commands from the "bin" folder:
+openssl genrsa -out key.pem
+openssl req -new -key key.pem -out csr.pem
+openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
+
+"key.pem", "csr.pem" and "cert.pem" should exist in the bin folder
+
+data folder contains SQL database as well as backup database

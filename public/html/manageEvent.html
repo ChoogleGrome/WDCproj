@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DELTA EVENTS: Create Event</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+        <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    </head>
+    <body>
+        <header class="fixed">
+            <h1 class="box title">DELTA EVENTS</h1>
+        </header>
+        <main class="center fitted" id="app">
+            <h2 class="title smaller">MANAGE EVENT</h2>
+            <div class="box">
+                <h2 class="subtitle">Main Details</h2>
+                <a>Name of Event</a>
+                <br>
+                <input type="text" class="textbox" v-model="name">
+                <br>
+                <a>Location</a>
+                <br>
+                <input type="text" class="textbox" v-model="location">
+                <br>
+            </div>
+            <a class="subtitle centered no-underline">{{ error }}</a>
+            <button class="main-button alone" v-on:click="submit">Submit</button>
+        </main>
+        <script src="../js/manageEvent.js"></script>
+    </body>
+</html>

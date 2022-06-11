@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DELTA EVENTS: Account Settings</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    </head>
+    <body>
+        <header class="fixed">
+            <h1 class="box title">DELTA EVENTS</h1>
+        </header>
+        <main class="center fitted" id="app">
+            <h1 class="title smaller">ACCOUNT SETTINGS</h1>
+            <div class="box">
+                <a>Username:</a>
+                <br>
+                <input type="text" class="textbox" v-model="username" required>
+                <br>
+                <a>Email:</a>
+                <br>
+                <input type="text" class="textbox" v-model="email" required>
+                <br>
+                <a>Password:</a>
+                <br>
+                <input type="password" class="textbox" v-model="password1" required>
+                <br>
+                <a>Confirm Password:</a>
+                <br>
+                <input type="password" class="textbox" v-model="password2" required>
+                <a class="subtitle centered no-underline">{{ error }}</a>
+            </div>
+            <button class="main-button alone" v-on:click="submit">Submit</button>
+            <button class="main-button alone" v-on:click="login">Log In</button>
+        </main>
+        <script src="../js/accountSettings.js"></script>
+    </body>
+</html>
